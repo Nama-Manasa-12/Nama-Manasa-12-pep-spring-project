@@ -10,9 +10,14 @@ import com.example.entity.Account;
 import com.example.repository.AccountRepository;
 @Service
 public interface AccountService {
-    @Autowired
 
-    Account findByUsername(String username);
+
+    Account saveAccount(Account account);
+
+    Account getAccountByUsername(String username);
+
+
+    //Account findByUsername(String username);
     
     // private AccountRepository accountRepository;
 
@@ -25,7 +30,7 @@ public interface AccountService {
     // //     //return savedAccount;
     // // }
 
-    Account saveAccount(Account account);
+    //Account saveAccount(Account account);
 //login
 
 
@@ -49,5 +54,5 @@ public interface AccountService {
     //     return null;
     // }
 
-        Account  getAccountByUsername(String username);
+        //Account  getAccountByUsername(String username);
 }
